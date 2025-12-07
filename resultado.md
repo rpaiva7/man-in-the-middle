@@ -56,6 +56,8 @@ Ao abrirmos o pacote encontrado em uma nova janela, conseguimos visualizar mais 
 
 Eu só consegui visualizar estes dados de tentativa de login porque essa conexão é http, ou seja, não é criptografada. Se fosse https provavelmente não conseguiria. 
 
+&nbsp;
+
 ### 8º Logando com os dados corretos no DVWA e visualizando no wireshark
 
 Dessa vez loguei com as credenciais corretas e também consigo visualizar o login e senha
@@ -124,11 +126,11 @@ Em seguida, clicar na lupa para scanear e fazer a varredura da rede para encontr
 
 Encontrados os hosts, vou adicionar o IP do Metasploitable (DVWA) como Target 1 e o IP do Windows 7 como Target 2.
 
-![]()
+![targets](https://i.imgur.com/4JWCmUF.jpeg)
 
 Ao clicarmos nos 3 pontinhos do menu do Ettercap > Targets > Current Targets eu consigo visualizar os dois hosts que defini como targets. 
 
-![]()
+![target](https://i.imgur.com/6eHfS3g.jpeg)
 
 Em seguida, é só clicar no botão play no canto superior esquerdo da janela do Ettercap para iniciar o sniffing.
 
@@ -142,7 +144,7 @@ Em seguida, precisamos fazer uma configuração no terminal do Kali para que con
 
 Comando: echo 1 > /proc/sys/net/ipv4/ip_forward
 
-![]()
+![echo](https://i.imgur.com/Q53ilR8.jpeg)
 
 &nbsp;
 
@@ -150,17 +152,17 @@ Comando: echo 1 > /proc/sys/net/ipv4/ip_forward
 
 Na janela do Ettercap, no canto superior direito, clicar no ícone de MITM Menu e depois clicar na opção ARP poisoning
 
-![]()
+![arp](https://i.imgur.com/pOPMiYw.jpeg)
 
 Vai abrir uma janela pequena, é só manter selecionada a opção Sniff remote connections e clicar em ok para que tudo que trafegar entre o Windows 7 e o Metasploitable eu possa capturar no Kali. 
 
-![]()
+![arp1](https://i.imgur.com/p5I6XTy.jpeg)
 
 Em seguida é só clicar no play no canto superior esquerda da janela do Ettercap para iniciarmos o Sniffing.
 
 Ao pesquisarmos pela palavra arp na barra de pesquisa do wireshark visualizaremos o tráfego ARP entre as máquinas que defini como alvo.
 
-![]()
+![trafego_arp](https://i.imgur.com/81sXiW2.jpeg)
 
 &nbsp;
 
@@ -168,6 +170,6 @@ Ao pesquisarmos pela palavra arp na barra de pesquisa do wireshark visualizaremo
 
 Ao inserirmos o login e senha e logarmos na máquina DVWA conseguiremos visualizar no ettercap o login e senha inseridos e a url do site. 
 
-![]()
+![dvwa](https://i.imgur.com/PyNGHct.jpeg)
 
 &nbsp;

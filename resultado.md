@@ -30,6 +30,8 @@ Comando: 192.168.56.101/dvwa
 
 ![trafego](https://i.imgur.com/UpKbJ9y.jpeg)
 
+&nbsp;
+
 ### 6º - Selecionando um pacote do tráfego de rede e investigando as informações dele
 
 ![select](https://i.imgur.com/5MYM1xj.jpeg)
